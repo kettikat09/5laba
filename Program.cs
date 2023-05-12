@@ -15,7 +15,7 @@ public class Program
 }
 interface KitchenTool
 {
-    public double weight { get; set; }
+    public double Weight { get; set; }
     public int Place { get; set; }
     public string Info();
 
@@ -61,34 +61,34 @@ public class Posud
 }
 public class Wilka : KitchenTool
 {
-    public double weight { get; set; }
+    public double Weight { get; set; }
     public int Place { get; set; }
     public bool wash { get; set; }
-    public string Info() => $"Wilka, Place - {Place}, Weight - {weight}, State - {(wash == true ? "Washing" : "-")}";
+    public string Info() => $"Wilka, Place - {Place}, Weight - {Weight}, State - {(wash == true ? "Washing" : "-")}";
     public void WashTools()
     {
         //...
     }
     public Wilka(double weight, int place)
     {
-        this.weight = weight;
+        this.Weight = weight;
         Place = place;
         wash = true;
     }
 }
 public class Tarilka : KitchenTool
 {
-    public double weight { get; set; }
+    public double Weight { get; set; }
     public int Place { get; set; }
     public bool wash { get; set; }
-    public string Info() => $"Tarilka, Place - {Place}, Weight - {weight}, State - {(wash == true ? "Washing" : "-")}";
+    public string Info() => $"Tarilka, Place - {Place}, Weight - {Weight}, State - {(wash == true ? "Washing" : "-")}";
     public void WashTools()
     {
         //...
     }
     public Tarilka(double weight, int place)
     {
-        this.weight = weight;
+        this.Weight = weight;
         Place = place;
         wash = true;
     }
@@ -97,10 +97,10 @@ public class TV : KitchenTool
 {
     public TV(double w, int pl)
     {
-        weight = w;
+        Weight = w;
         Place = pl;
     }
-    public double weight { get; set; }
+    public double Weight { get; set; }
     public int Place { get; set; }
 
     public bool state = false;
@@ -115,5 +115,5 @@ public class TV : KitchenTool
             state = false;
         }
     }
-    public string Info() => $"Tv, Place - {Place}, Weight - {weight}, State - {(state == true ? "ON" : "OFF")}";
+    public string Info() => $"TV, Place - {Place}, Weight - {Weight}, State - {(state == true ? "ON" : "OFF")}";
 }
