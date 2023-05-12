@@ -115,5 +115,5 @@ public class TV : KitchenTool
             state = false;
         }
     }
-    public string Info() => $"TV, Place - {Place}, Weight - {weight}, State - {(state == true ? "ON" : "OFF")}";
+    public string Info() => $"Tv, Place - {Place}, Weight - {weight}, State - {(state == true ? "ON" : "OFF")}";
 }
